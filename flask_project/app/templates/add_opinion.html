@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %} Add opinion {% endblock %}
+{% block content %}
+    <form action="add_opinion" method="POST">
+        <p>Position of film: <input type="text" name="film_id" /></p>
+        <p>Opinion: <input type="text" name="opinion" /></p>
+        <p><input type="submit" value="submit" /></p>
+    </form>
+{% endblock %}
